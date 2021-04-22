@@ -12,3 +12,7 @@
 </head>
 
 <body>
+    <div class="main-wrapper">
+        <header>
+
+        </header>
