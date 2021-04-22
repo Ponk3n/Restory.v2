@@ -14,9 +14,20 @@
 <body>
     <div class="main-wrapper">
         <header>
-            <nav class="navbar navbar-dark">
-                <a class="navbar-brand" href="#">
+            <div class="topnavbar" id="myTopnav">
+                <a class="topnavbar-brand" href="#">
                     <img src="./assets/images/White_logo_Restory_group_education.png" height="30" alt="Restory" />
                 </a>
-            </nav>
+
+                <a href="#" class="active">Hem</a>
+                <a href="#">Om oss</a>
+                <a href="#">Tjänster</a>
+                <a href="#">Kundreferenser</a>
+                <a href="#">Boka konsult</a>
+                <a href="#">Kontakta oss</a>
+                <a href="#">Logga in</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
         </header>

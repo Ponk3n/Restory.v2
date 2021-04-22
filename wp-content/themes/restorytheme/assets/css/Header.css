@@ -1,3 +1,53 @@
-.navbar {
+.topnavbar {
   background-color: #282828;
+  overflow: hidden;
+}
+
+.topnavbar a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnavbar a:hover {
+  background-color: #d9a594;
+  color: black;
+}
+
+.topnavbar a.active {
+  font-weight: bold;
+}
+
+.topnavbar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnavbar a:not(:first-child) {
+    display: none;
+  }
+  .topnavbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnavbar.responsive {
+    position: relative;
+  }
+  .topnavbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnavbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
