@@ -41,7 +41,7 @@ function restorytheme_register_styles()
     );
     wp_enqueue_style(
         'restorytheme-fontawesome',
-        "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css",
+        "https://cdn.jsdelivr.net/npm/@fontawesome/fontawesome-free@5.15.3/css/fontawesome.min.css",
         array(),
         '5.15.3',
         'all'
