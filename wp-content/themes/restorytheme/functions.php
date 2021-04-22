@@ -8,6 +8,20 @@ function restorytheme_theme_support()
 
 add_action('after_theme_support', 'restorytheme_theme_support');
 
+
+function restorytheme_menus()
+{
+    $locations = array(
+        'primary' => "Desktop Primary",
+        'footer' => "Footer Menu Items"
+    );
+
+    register_nav_menus($locations);
+}
+
+add_action('init', 'restorytheme_menus');
+
+
 function restorytheme_register_styles()
 {
     $version = wp_get_theme()->get('version');
