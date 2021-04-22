@@ -14,9 +14,9 @@
 <body>
     <div class="main-wrapper">
         <header>
-            <nav class="navbar">
+            <nav class="navbar navbar-dark">
                 <a class="navbar-brand" href="#">
-                    <img src="./assets/images/White_logo_Restory_group_education.png" alt="Restory" />
+                    <img src="./assets/images/White_logo_Restory_group_education.png" height="30" alt="Restory" />
                 </a>
             </nav>
         </header>
