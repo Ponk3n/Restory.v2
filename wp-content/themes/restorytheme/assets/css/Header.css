@@ -1,7 +1,23 @@
-.topnavbar {
+.myCustomNavbar {
   background-color: #282828;
-  overflow: hidden;
 }
+
+.myCustomNavbar a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.myCustomNavbar a:hover {
+  background-color: #d9a594;
+  color: black;
+}
+
+/*
 
 .topnavbar a {
   float: left;
@@ -51,3 +67,4 @@
     text-align: left;
   }
 }
+ */

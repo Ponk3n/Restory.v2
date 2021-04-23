@@ -14,20 +14,40 @@
 <body>
     <div class="main-wrapper">
         <header>
-            <div class="topnavbar" id="myTopnav">
-                <a class="topnavbar-brand" href="#">
-                    <img src="./assets/images/White_logo_Restory_group_education.png" height="30" alt="Restory" />
+            <nav class="navbar navbar-expand-lg myCustomNavbar">
+                <a class="navbar-brand" href="#">
+                    <img src="/assets/images/White_logo_Restory_group_education.png" height="30" alt="Restory" />
                 </a>
-
-                <a href="#" class="active">Hem</a>
-                <a href="#">Om oss</a>
-                <a href="#">Tjänster</a>
-                <a href="#">Kundreferenser</a>
-                <a href="#">Boka konsult</a>
-                <a href="#">Kontakta oss</a>
-                <a href="#">Logga in</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
-                </a>
-            </div>
+                </button>
+
+                <!--<?php
+                    /*wp_nav_menu(
+                    array(
+                        'menu' => 'primary',
+                        'container' => '',
+                        'theme_location' => 'primary',
+                        'items_wrap' => '<ul id="" class="">%3$s</ul>'
+                    )
+                );*/
+                    ?> -->
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </header>

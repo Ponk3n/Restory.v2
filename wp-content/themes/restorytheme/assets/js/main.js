@@ -13,11 +13,11 @@ $(document).ready(function () {
 
 
 // Under this comment comes a toggle for removing/adding the responsive class to topnavbar
-function myFunction() {
+/* function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnavbar") {
         x.className += " responsive";
     } else {
         x.className = "topnavbar";
     }
-}
+} */
