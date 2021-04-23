@@ -22,32 +22,17 @@
                     <i class="fas fa-bars myIcon"></i>
                 </button>
 
-                <?php
-                wp_nav_menu(
-                    array(
-                        'menu' => 'primary',
-                        'container' => '',
-                        'theme_location' => 'primary',
-                        'items_wrap' => '<ul id="" class="navbar-nav">%3$s</ul>'
-                    )
-                );
-                ?>
-
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
+                    <?php
+                    wp_nav_menu(
+                        array(
+                            'menu' => 'primary',
+                            'container' => '',
+                            'theme_location' => 'primary',
+                            'items_wrap' => '<ul id="" class="navbar-nav">%3$s</ul>'
+                        )
+                    );
+                    ?>
                 </div>
             </nav>
         </header>
