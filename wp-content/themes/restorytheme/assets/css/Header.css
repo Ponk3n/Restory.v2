@@ -17,6 +17,10 @@
   color: black;
 }
 
+.myCustomNavbar .myIcon {
+  color: #fff;
+}
+
 /*
 
 .topnavbar a {
