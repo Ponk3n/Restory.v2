@@ -1,5 +1,6 @@
 .myCustomNavbar {
   background-color: #282828;
+  padding: 0;
 }
 
 .myCustomNavbar a {
@@ -12,13 +13,16 @@
   font-size: 17px;
 }
 
-.myCustomNavbar a:hover {
+.myCustomNavbar a:not(.myLogo):hover {
   background-color: #d9a594;
   color: black;
 }
 
 .myCustomNavbar .myIcon {
   color: #fff;
+}
+
+.navbar-nav {
 }
 
 /*
