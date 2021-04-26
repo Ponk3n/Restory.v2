@@ -22,7 +22,8 @@
   color: #fff;
 }
 
-.navbar-nav {
+.navbar-nav a {
+  width: 100%;
 }
 
 /*
