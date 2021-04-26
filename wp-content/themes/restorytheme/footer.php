@@ -11,9 +11,9 @@
             <?php
             wp_nav_menu(
                 array(
-                    'menu' => 'footer',
+                    'menu' => 'primary',
                     'container' => '',
-                    'theme_location' => 'footer',
+                    'theme_location' => 'primary',
                     'items_wrap' => '<ul id="" class="navbar-nav">%3$s</ul>'
                 )
             );
