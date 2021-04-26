@@ -18,10 +18,11 @@
                 <a class="navbar-brand myLogo" href="#">
                     <?php
                     if (function_exists('the_custom_logo')) {
-                        the_custom_logo();
+                        $custom_logo_id = get_theme_mod('custom_logo');
+                        $logo = wp_get_attachment_image_src($custom_logo_id);
                     }
                     ?>
-                    <img src="./assets/images/White_logo_Restory_group_education.png" height="30" alt="Restory" />
+                    <img src="<?php echo $logo[0] ?>" class="mb-3 mx-auto logo" alt="Restory" />
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars myIcon"></i>
