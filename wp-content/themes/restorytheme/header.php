@@ -16,6 +16,11 @@
         <header>
             <nav class="navbar navbar-expand-md sticky-top myCustomNavbar">
                 <a class="navbar-brand myLogo" href="#">
+                    <?php
+                    if (function_exists('the_custom_logo')) {
+                        the_custom_logo();
+                    }
+                    ?>
                     <img src="./assets/images/White_logo_Restory_group_education.png" height="30" alt="Restory" />
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
