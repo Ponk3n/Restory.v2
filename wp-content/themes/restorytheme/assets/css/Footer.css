@@ -1,6 +1,6 @@
 .myCustomFooter {
   background-color: #282828;
-  padding: 0;
+  padding: 20px;
 }
 
 .myCustomFooter a {
@@ -23,6 +23,13 @@
 
 .footerList ul {
   list-style: none;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+.footerList a {
+  padding: 3px;
 }
 
 .socialMediaWrapper {
@@ -31,4 +38,8 @@
 
 .socialMedia {
   justify-content: space-evenly;
+}
+
+.footerContact {
+  color: #fff;
 }

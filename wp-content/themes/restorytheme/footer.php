@@ -3,9 +3,13 @@
 <footer>
     <div class="container-fluid">
         <div class="row myCustomFooter">
-            <div class="col-10 vertical-top d-flex justify-content-around">
+            <div class="col-10 vertical-top d-flex">
 
-
+                <div class="footerContact">
+                    <h4>Restory</h4>
+                    <p>+46 123 123 12</p>
+                    <p>exempel@mailtest.com</p>
+                </div>
 
                 <div class="footerList" id="">
                     <?php
