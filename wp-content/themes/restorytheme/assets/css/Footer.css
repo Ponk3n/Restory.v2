@@ -4,13 +4,31 @@
 }
 
 .myCustomFooter a {
-  float: left;
+  /* float: left;*/
   display: block;
   color: #fff;
   text-decoration: none;
   font-size: 17px;
+  letter-spacing: 2px;
 }
 
-.myCustomFooter .myIcon {
+.footerIcon {
   color: #fff;
+}
+
+.footerList {
+  margin: 2px;
+  padding: 5px;
+}
+
+.footerList ul {
+  list-style: none;
+}
+
+.socialMediaWrapper {
+  align-self: center;
+}
+
+.socialMedia {
+  justify-content: space-evenly;
 }
