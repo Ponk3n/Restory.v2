@@ -5,11 +5,23 @@ function restorytheme_theme_support()
     // Adds dynamic title tag support
     add_theme_support('title-tag');
     // Adds support for custom logo
-    add_theme_support('custom-logo');
+
 }
 
 add_action('after_setup_theme', 'restorytheme_theme_support');
 
+function restorytheme_custom_logo_setup()
+{
+    $defaults = array(
+        'height' => 389,
+        'width' => 709,
+        'flex-height' => true,
+        'flex-width' => true
+    );
+    add_theme_support('custom-logo', $defaults);
+}
+
+add_action('after_setup_theme', 'restorytheme_custom_logo_setup');
 
 
 function restorytheme_menus()
