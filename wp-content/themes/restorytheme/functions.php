@@ -5,7 +5,7 @@ function restorytheme_theme_support()
     // Adds dynamic title tag support
     add_theme_support('title-tag');
     // Adds support for custom logo
-
+    add_theme_support('post-thumbnails');
 }
 
 add_action('after_setup_theme', 'restorytheme_theme_support');
