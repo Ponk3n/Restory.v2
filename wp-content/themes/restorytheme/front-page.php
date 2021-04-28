@@ -10,6 +10,8 @@
             the_content();
         }
     }
+
+    dynamic_sidebar('sidebar-1');
     ?>
 
 </article>
