@@ -1,7 +1,7 @@
 <?php get_header() ?>
 
 
-<article>
+<article class="px-3 py-5 p-md-5">
 
     <?php
     if (have_posts()) {
