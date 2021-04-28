@@ -1,0 +1,25 @@
+.carousel-caption {
+  background: #607d8b;
+  color: white;
+  transform: translateY(-50%);
+  bottom: initial;
+  top: 50%;
+}
+
+.button {
+  background-color: #282828;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: #d9a594;
+  color: black;
+  border: none;
+  text-decoration: none;
+}
