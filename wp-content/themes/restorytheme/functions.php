@@ -110,12 +110,10 @@ function restorytheme_widget_areas()
             'before_title' => '',
             'after_title' => '',
             'before_widget' => '',
-            'after_widget' => ''
-        ),
-        array(
-            'name' => 'Sidebar Area',
-            'id' => 'sidebar-1',
-            'description' => 'Sidebar Widget Area'
+            'after_widget' => '',
+            'name' => 'Footer social media',
+            'id' => 'footer-1',
+            'description' => 'Add social media links in the a-tag inside the quotationmarks of href=""'
         )
     );
 }

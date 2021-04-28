@@ -25,24 +25,7 @@
                 </div>
             </div>
             <div class="col-2 socialMediaWrapper">
-                <div class="row socialMedia">
-                    <div>
-                        <a href="#" alt="instagram">
-                            <i class="fab fa-instagram fa-2x footerIcon"></i>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#" alt="twitter">
-                            <i class="fab fa-twitter fa-2x footerIcon"></i>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#" alt="facebook">
-                            <i class="fab fa-facebook-square fa-2x footerIcon"></i>
-                        </a>
-                    </div>
-                </div>
-
+                <?php dynamic_sidebar('footer-1'); ?>
             </div>
         </div>
     </div>
