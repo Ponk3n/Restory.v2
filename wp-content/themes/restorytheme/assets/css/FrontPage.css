@@ -40,3 +40,16 @@
   right: 0;
   background: rgba(96, 125, 139, 0.7);
 }
+
+.carousel-item img {
+  max-height: 880px;
+}
+
+.myCustomCard {
+  width: 10rem;
+  margin: 10px;
+}
+
+/* .myCustomCard img {
+  width: 100%;
+} */
