@@ -54,3 +54,8 @@ h3 {
   font-family: "Montserrat-Regular";
   font-size: 90pt;
 }
+
+.jumbotron {
+  background: #607d8b;
+  color: white;
+}
