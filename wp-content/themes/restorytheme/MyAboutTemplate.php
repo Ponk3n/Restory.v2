@@ -9,7 +9,11 @@ get_header()
     </div>
 </div>
 <article class="px-3 py-5 p-md-5">
-    <?php the_content(); ?>
+    <div class="contianer">
+        <div class="row">
+            <?php the_content(); ?>
+        </div>
+    </div>
 </article>
 
 <?php get_footer() ?>
