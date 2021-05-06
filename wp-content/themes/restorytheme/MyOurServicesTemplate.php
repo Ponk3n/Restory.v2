@@ -10,7 +10,7 @@ get_header()
 </div>
 <article class="px-3 py-5 p-md-5">
     <div class="container">
-        <div class="row">
+        <div class="row MyContentRow">
             <div class="col-6 customWellBread">
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet voluptatum dignissimos enim
@@ -26,7 +26,7 @@ get_header()
             </div>
             <?php the_content(); ?>
         </div>
-        <div class="row">
+        <div class="row MyContentRow">
             <div class="col-6 customWellHeader">
                 <span>
                     <h4>Konsult</h4>
