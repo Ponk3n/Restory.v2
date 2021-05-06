@@ -9,9 +9,14 @@ get_header()
     </div>
 </div>
 <article class="px-3 py-5 p-md-5">
-    <div class="contianer">
+    <div class="container">
         <div class="row">
-            <?php the_content(); ?>
+            <div class="col-5">
+                <?php the_content(); ?>
+            </div>
+            <div class="col-7">
+
+            </div>
         </div>
     </div>
 </article>
