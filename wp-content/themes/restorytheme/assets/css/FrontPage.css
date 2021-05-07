@@ -20,7 +20,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(96, 125, 139, 0.5);
+  background: rgba(177, 187, 188, 0.3);
 }
 
 .carousel-item img {
@@ -51,7 +51,7 @@
 }
 
 .customWell img {
-  max-height: 400px;
+  width: 100%;
 }
 
 .headlineBread {
