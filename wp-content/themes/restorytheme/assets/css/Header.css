@@ -14,8 +14,8 @@
 }
 
 .myCustomNavbar a:not(.myLogo):hover {
-  background-color: #d9a594;
-  color: black;
+  background-color: #60807f;
+  color: white;
 }
 
 .myCustomNavbar .myIcon {

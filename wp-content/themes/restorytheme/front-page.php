@@ -99,7 +99,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore labore nisi, est quod accusamus architecto,
                 magni autem molestias fugit et vel blanditiis aliquam sequi corporis! Accusamus mollitia ratione voluptatem nobis.
             </p>
-            <a href="#" class="button">Läs mer</a>
+            <a href="#" class="buttonAlt">Läs mer</a>
         </div>
         <div class="col-md-4 customWellCols">
             <img src="https://images.pexels.com/photos/3184430/pexels-photo-3184430.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="img-fluid">

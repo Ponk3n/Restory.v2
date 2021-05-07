@@ -44,17 +44,32 @@ Author: Robert 'Ponken' A. P.
 
 h1 {
   font-family: "Montserrat-Semibold";
-  font-size: 120pt;
+  font-size: 80pt;
 }
 
 h2 {
   font-family: "Montserrat-Medium";
-  font-size: 100pt;
+  font-size: 40pt;
 }
 
 h3 {
   font-family: "Montserrat-Regular";
-  font-size: 90pt;
+  font-size: 30pt;
+}
+
+h4 {
+  font-family: "AvenirLTStd-Black";
+  font-size: 17pt;
+}
+
+p {
+  font-family: "AvenirLTStd-Book";
+  font-size: 15pt;
+}
+
+a {
+  font-family: "AvenirLTStd-Roman";
+  font-size: 15pt;
 }
 
 .jumbotron {
@@ -63,7 +78,7 @@ h3 {
 }
 
 .button {
-  background-color: #282828;
+  background-color: #607d8b;
   color: white;
   border: none;
   padding: 11px 32px;
@@ -74,15 +89,15 @@ h3 {
 }
 
 .button:hover {
-  background-color: #d9a594;
-  color: black;
+  background-color: #3e5e6b;
+  color: white;
   border: none;
   text-decoration: none;
 }
 
-.buttonDarkBackground {
-  background-color: #b1bbbc;
-  color: black;
+.buttonAlt {
+  background-color: #3e5e6b;
+  color: white;
   border: none;
   padding: 11px 32px;
   text-align: center;
@@ -91,9 +106,9 @@ h3 {
   border-radius: 4px;
 }
 
-.buttonDarkBackground:hover {
-  background-color: #d9a594;
-  color: black;
+.buttonAlt:hover {
+  background-color: #282828;
+  color: white;
   border: none;
   text-decoration: none;
 }

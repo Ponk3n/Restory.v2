@@ -5,7 +5,7 @@ get_header()
 
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
-        <h3><?php the_title() ?></h3>
+        <h2><?php the_title() ?></h2>
     </div>
 </div>
 <article class="px-3 py-5 p-md-5">
@@ -17,7 +17,7 @@ get_header()
                     officiis cumque sunt repellat numquam voluptatem itaque,mollitia dolorum, accusamus odit
                     dolorem! Aut animi itaque aspernatur repellendus id.
                 </p>
-                <a href="#" class="buttonDarkBackground">Läs mer</a>
+                <a href="#" class="button">Läs mer</a>
             </div>
             <div class="col-6 customWellHeader">
                 <span>
@@ -38,7 +38,7 @@ get_header()
                     officiis cumque sunt repellat numquam voluptatem itaque,mollitia dolorum, accusamus odit
                     dolorem! Aut animi itaque aspernatur repellendus id.
                 </p>
-                <a href="#" class="buttonDarkBackground">Läs mer</a>
+                <a href="#" class="button">Läs mer</a>
             </div>
             <?php the_content(); ?>
         </div>
