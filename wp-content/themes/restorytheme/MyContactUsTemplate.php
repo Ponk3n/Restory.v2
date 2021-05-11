@@ -33,8 +33,8 @@ $to = get_option('admin_email');
 $subject = "Någon skickade ett meddelande från " . get_bloginfo('name');
 $headers = 'From: ' . $email . "\r\n" . 'Reply-To: ' . $email . "\r\n";
 
-if (isset($_POST['AgreeCheck'])) {
-    if (!isset($_POST['AgreeCheck'])) my_contact_form_generate_response("error", $no_agree);
+if ($_POST['AgreeCheck'] == 'hasAgreed') {
+    if ($_POST['AgreeCheck'] != 'hasAgreed') my_contact_form_generate_response("error", $no_agree);
     else {
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) my_contact_form_generate_response("error", $email_invalid);
         else {
@@ -87,8 +87,8 @@ get_header()
                         <textarea rows="4" cols="10" placeholder="Skriv meddelande här..." class="form-control customInputFocus" id="MessageInput" name="MessageInput" value="<?php echo esc_textarea($_POST['MessageInput']); ?>"></textarea>
                     </div>
                     <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="AgreeCheck" name="AgreeCheck" value="hasAgreed">
                         <label class="form-check-label" for="AgreeCheck">Jag samtycker</label>
-                        <input type="checkbox" class="form-check-input" id="AgreeCheck" name="AgreeCheck" value="1">
                     </div>
                     <input type="hidden" name="submitted" value="1">
                     <p><input type="submit"></p>
