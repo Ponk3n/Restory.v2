@@ -20,6 +20,35 @@ $email_invalid      = "Ogiltig e-mail adress.";
 $message_unsent     = "Meddelandet skickades inte, var god och försök igen.";
 $message_sent       = "Ditt meddelande har sänts, tack!";
 
+// user posted variables
+$firstName = $_POST['firstNameInput'];
+$lastName = $_POST['lastNameInput'];
+$email = $_POST['E-MailInput'];
+$phoneNumber = $_POST['PhoneNumberInput'];
+$message = $_POST['MessageInput'];
+$agreeCheck = $_POST['AgreeCheck'];
+
+// php mailer variables
+$to = get_option('admin_email');
+$subject = "Någon skickade ett meddelande från " . get_bloginfo('name');
+$headers = 'From: ' . $email . "\r\n" . 'Reply-To: ' . $email . "\r\n";
+
+if (isset($_POST['AgreeCheck'])) {
+    if (!isset($_POST['AgreeCheck'])) my_contact_form_generate_response("error", $no_agree);
+    else {
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) my_contact_form_generate_response("error", $email_invalid);
+        else {
+            if (empty($firstName) || empty($lastName) || empty($message)) {
+                my_contact_form_generate_response("Error", $missing_content);
+            } else {
+                $sent = wp_mail($to, $subject, strip_tags($message), $headers);
+                if ($sent) my_contact_form_generate_response("success", $message_sent);
+                else my_contact_form_generate_response("Error", $message_unsent);
+            }
+        }
+    }
+} else if ($_POST['submitted']) my_contact_form_generate_response("Error", $missing_content);
+
 get_header()
 ?>
 
@@ -58,8 +87,8 @@ get_header()
                         <textarea rows="4" cols="10" placeholder="Skriv meddelande här..." class="form-control customInputFocus" id="MessageInput" name="MessageInput" value="<?php echo esc_textarea($_POST['MessageInput']); ?>"></textarea>
                     </div>
                     <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="agreeCheck">
-                        <label class="form-check-label" for="agreeCheck">Jag samtycker</label>
+                        <label class="form-check-label" for="AgreeCheck">Jag samtycker</label>
+                        <input type="checkbox" class="form-check-input" id="AgreeCheck" name="AgreeCheck" value="1">
                     </div>
                     <input type="hidden" name="submitted" value="1">
                     <p><input type="submit"></p>
