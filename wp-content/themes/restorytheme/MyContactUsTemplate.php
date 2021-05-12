@@ -1,7 +1,5 @@
 <?php
-/* Template Name: My-Contact */
-
-// respoinse generation function
+// response generation function
 $response = "";
 
 // function to generate response
@@ -48,7 +46,10 @@ if ($_POST['AgreeCheck'] == 'hasAgreed') {
         }
     }
 } else if ($_POST['submitted']) my_contact_form_generate_response("Error", $missing_content);
+?>
 
+<?php
+/* Template Name: My-Contact */
 get_header()
 ?>
 
