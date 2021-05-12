@@ -60,13 +60,14 @@ get_header()
                             </div>
                             <!-- Input message -->
                             <div class="form-group">
-
+                                <label for="messageInput">Meddelande</label><span>*</span>
+                                <textarea rows="4" cols="10" placeholder="Skriv meddelande här..." class="form-control customInputFocus" id="MessageInput" name="MessageInput" value="<?php echo esc_textarea($_POST['MessageInput']); ?>"></textarea>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-12 text-center m-3">
-                        <input type="submit">
+                        <button type="submit" class="button">Skicka</button>
                     </div>
                 </form>
             </div>
