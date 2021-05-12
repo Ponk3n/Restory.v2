@@ -87,6 +87,11 @@ select {
   font-size: 15pt;
 }
 
+textarea {
+  font-family: "AvenirLTStd-Book";
+  font-size: 15pt;
+}
+
 .jumbotron {
   background: #607d8b;
   color: white;
