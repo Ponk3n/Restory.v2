@@ -11,7 +11,11 @@ get_header()
 <article class="px-3 py-5 p-md-5">
     <div class="container">
         <div class="row">
-            <?php the_content(); ?>
+            <div class="col-8 offset-2">
+                <form action="<?php the_permalink() ?>" method="POST">
+
+                </form>
+            </div>
         </div>
     </div>
 </article>
