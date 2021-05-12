@@ -1,4 +1,41 @@
 <?php
+// response generation function
+$response = "";
+
+// function to generate response
+function my_contact_form_generate_response($type, $message)
+{
+    global $response;
+
+    if ($type == "success") $response = "<div class='success'>{$message}</div>";
+    else $response = "<div class='error'>{$message}</div>";
+}
+
+// response messages
+$message_unsent     = "Meddelandet skickades inte, var god och försök igen.";
+$message_sent       = "Ditt meddelande har sänts, tack!";
+
+// user posted variables
+$firstName = $_POST['firstNameInput'];
+$lastName = $_POST['lastNameInput'];
+$email = $_POST['emailInput'];
+$companyName = $_POST['companyNameInput'];
+$phoneNumber = $_POST['phoneNumberInput'];
+$message = $_POST['messageInput'];
+
+// php mailer variables
+$to = get_option('admin_email');
+$subject = "Någon skickade ett meddelande från " . get_bloginfo('name');
+$headers = 'From: ' . $email . "\r\n" . 'Reply-To: ' . $email . "\r\n";
+
+
+$sent = wp_mail($to, $subject, strip_tags($firstName, $lastName, $phoneNumber, $message), $headers);
+if ($sent) my_contact_form_generate_response("success", $message_sent);
+else my_contact_form_generate_response("Error", $message_unsent);
+
+?>
+
+<?php
 /* Template Name: My-Book-Consult */
 get_header()
 ?>
@@ -11,8 +48,9 @@ get_header()
 <article class="px-3 py-5 p-md-5">
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col" id="respond">
                 <form action="<?php the_permalink() ?>" method="POST">
+                    <?php echo $response; ?>
                     <div class="row">
                         <div class="col-md-4 offset-md-2">
                             <!-- Input firstname -->
@@ -45,7 +83,7 @@ get_header()
                             <!-- Input select service -->
                             <div class="form-group">
                                 <label for="selectServiceInput">Typ av tjänst</label><span>*</span>
-                                <select class="form-control customInputFocus" name="selectServiceInput" id="selectServiceInput">
+                                <select class="form-control customInputFocus" name="selectServiceInput" id="selectServiceInput" required>
                                     <option Selected>Välj...</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -61,7 +99,7 @@ get_header()
                             <!-- Input message -->
                             <div class="form-group">
                                 <label for="messageInput">Meddelande</label><span>*</span>
-                                <textarea rows="4" cols="10" placeholder="Skriv meddelande här..." class="form-control customInputFocus" id="MessageInput" name="MessageInput" value="<?php echo esc_textarea($_POST['MessageInput']); ?>"></textarea>
+                                <textarea rows="4" cols="10" placeholder="Skriv meddelande här..." class="form-control customInputFocus" id="messageInput" name="messageInput" value="<?php echo esc_textarea($_POST['messageInput']); ?>" required></textarea>
                             </div>
                         </div>
                     </div>
