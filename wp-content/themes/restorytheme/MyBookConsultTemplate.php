@@ -1,41 +1,4 @@
 <?php
-// response generation function
-$response = "";
-
-// function to generate response
-function my_contact_form_generate_response($type, $message)
-{
-    global $response;
-
-    if ($type == "success") $response = "<div class='success'>{$message}</div>";
-    else $response = "<div class='error'>{$message}</div>";
-}
-
-// response messages
-$message_unsent     = "Meddelandet skickades inte, var god och försök igen.";
-$message_sent       = "Ditt meddelande har sänts, tack!";
-
-// user posted variables
-$firstName = $_POST['firstNameInput'];
-$lastName = $_POST['lastNameInput'];
-$email = $_POST['emailInput'];
-$companyName = $_POST['companyNameInput'];
-$phoneNumber = $_POST['phoneNumberInput'];
-$message = $_POST['messageInput'];
-
-// php mailer variables
-$to = get_option('admin_email');
-$subject = "Någon skickade ett meddelande från " . get_bloginfo('name');
-$headers = 'From: ' . $email . "\r\n" . 'Reply-To: ' . $email . "\r\n";
-
-
-$sent = wp_mail($to, $subject, strip_tags($firstName, $lastName, $phoneNumber, $message), $headers);
-if ($sent) my_contact_form_generate_response("success", $message_sent);
-else my_contact_form_generate_response("Error", $message_unsent);
-
-?>
-
-<?php
 /* Template Name: My-Book-Consult */
 get_header()
 ?>
@@ -56,27 +19,27 @@ get_header()
                             <!-- Input firstname -->
                             <div class="form-group">
                                 <label for="firstNameInput">Förnamn</label><span>*</span>
-                                <input type="text" class="form-control customInputFocus" id="firstNameInput" name="firstNameInput" value="<?php echo esc_attr($_POST['firstNameInput']); ?>" required>
+                                <input type="text" class="form-control customInputFocus" id="firstNameInput" name="firstNameInput" required>
                             </div>
                             <!-- Input lastname -->
                             <div class="form-group">
                                 <label for="lastNameInput">Efternamn</label><span>*</span>
-                                <input type="text" class="form-control customInputFocus" id="lastNameInput" name="lastNameInput" value="<?php echo esc_attr($_POST['lastNameInput']); ?>" required>
+                                <input type="text" class="form-control customInputFocus" id="lastNameInput" name="lastNameInput" required>
                             </div>
                             <!-- Input email -->
                             <div class="form-group">
                                 <label for="emailInput">E-Mail</label><span>*</span>
-                                <input type="email" class="form-control customInputFocus" id="emailInput" name="emailInput" value="<?php echo esc_attr($_POST['emailInput']); ?>" required>
+                                <input type="email" class="form-control customInputFocus" id="emailInput" name="emailInput" required>
                             </div>
                             <!-- Input company name -->
                             <div class="form-group">
                                 <label for="companyNameInput">Företagsnamn</label><span>*</span>
-                                <input type="text" class="form-control customInputFocus" id="companyNameInput" name="companyNameInput" value="<?php echo esc_attr($_POST['companyNameInput']); ?>" required>
+                                <input type="text" class="form-control customInputFocus" id="companyNameInput" name="companyNameInput" required>
                             </div>
                             <!-- Input phone number -->
                             <div class="form-group">
                                 <label for="phoneNumberInput">Telefonnummer</label><span>*</span>
-                                <input type="text" class="form-control customInputFocus" id="phoneNumberInput" name="phoneNumberInput" value="<?php echo esc_attr($_POST['phoneNumberInput']); ?>" required>
+                                <input type="text" class="form-control customInputFocus" id="phoneNumberInput" name="phoneNumberInput" required>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -99,7 +62,7 @@ get_header()
                             <!-- Input message -->
                             <div class="form-group">
                                 <label for="messageInput">Meddelande</label><span>*</span>
-                                <textarea rows="4" cols="10" placeholder="Skriv meddelande här..." class="form-control customInputFocus" id="messageInput" name="messageInput" value="<?php echo esc_textarea($_POST['messageInput']); ?>" required></textarea>
+                                <textarea rows="4" cols="10" placeholder="Skriv meddelande här..." class="form-control customInputFocus" id="messageInput" name="messageInput" required></textarea>
                             </div>
                         </div>
                     </div>
