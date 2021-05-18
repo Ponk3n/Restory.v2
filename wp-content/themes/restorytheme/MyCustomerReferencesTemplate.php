@@ -15,12 +15,35 @@ get_header()
                 <label class="button">
                     <input type="radio" value="volvo"> Volvo
                 </label>
+                <label class="button">
+                    <input type="radio" value="ericsson"> Ericsson
+                </label>
+                <label class="button">
+                    <input type="radio" value="academedia"> Academedia
+                </label>
+                <label class="button">
+                    <input type="radio" value="newton"> Newton
+                </label>
+                <label class="button">
+                    <input type="radio" value="ihm"> IHM
+                </label>
             </div>
             <div class="col-9">
                 <div id="volvoDiv">
-
+                    hej
                 </div>
-
+                <div id="ericssonDiv">
+                    hallå
+                </div>
+                <div id="academediaDiv">
+                    tjena
+                </div>
+                <div id="newtonDiv">
+                    Kolla
+                </div>
+                <div id="ihmDiv">
+                    här
+                </div>
             </div>
             <?php the_content(); ?>
         </div>
