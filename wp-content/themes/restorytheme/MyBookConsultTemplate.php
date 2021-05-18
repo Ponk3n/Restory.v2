@@ -11,9 +11,8 @@ get_header()
 <article class="px-3 py-5 p-md-5">
     <div class="container">
         <div class="row">
-            <div class="col" id="respond">
+            <div class="col">
                 <form action="<?php the_permalink() ?>" method="POST">
-                    <?php echo $response; ?>
                     <div class="row">
                         <div class="col-md-4 offset-md-2">
                             <!-- Input firstname -->
