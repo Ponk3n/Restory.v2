@@ -11,6 +11,17 @@ get_header()
 <article class="px-3 py-5 p-md-5">
     <div class="container">
         <div class="row">
+            <div class="col-3" id="toggleCompany">
+                <label class="button">
+                    <input type="radio" value="volvo"> Volvo
+                </label>
+            </div>
+            <div class="col-9">
+                <div id="volvoDiv">
+
+                </div>
+
+            </div>
             <?php the_content(); ?>
         </div>
     </div>
