@@ -11,41 +11,40 @@ get_header()
 <article class="px-3 py-5 p-md-5">
     <div class="container">
         <div class="row">
-            <div class="col-3" id="toggleCompany">
-                <label class="button">
-                    <input type="radio" value="volvo"> Volvo
-                </label>
-                <label class="button">
-                    <input type="radio" value="ericsson"> Ericsson
-                </label>
-                <label class="button">
-                    <input type="radio" value="academedia"> Academedia
-                </label>
-                <label class="button">
-                    <input type="radio" value="newton"> Newton
-                </label>
-                <label class="button">
-                    <input type="radio" value="ihm"> IHM
-                </label>
+            <div class="col-3 radioButtonsReferences">
+                <input type="radio" id="radioVolvo" name="toggleCompany" class="radioBtn" data-target-id="volvo">
+                <label for="radioVolvo">Volvo</label>
+
+                <input type="radio" id="radioEricsson" name="toggleCompany" class="radioBtn" data-target-id="ericsson">
+                <label for="radioEricsson">Ericsson</label>
+
+                <input type="radio" id="radioAcademedia" name="toggleCompany" class="radioBtn" data-target-id="academedia">
+                <label for="radioAcademedia">Academedia</label>
+
+                <input type="radio" id="radioNewton" name="toggleCompany" class="radioBtn" data-target-id="newton">
+                <label for="radioNewton">Newton</label>
+
+                <input type="radio" id="radioIHM" name="toggleCompany" class="radioBtn" data-target-id="ihm">
+                <label for="radioIHM">IHM</label>
             </div>
             <div class="col-9">
-                <div id="volvoDiv">
+                <div class="myDiv" data-target="volvo">
                     hej
                 </div>
-                <div id="ericssonDiv">
+                <div class="myDiv" data-target="ericsson">
                     hallå
                 </div>
-                <div id="academediaDiv">
+                <div class="myDiv" data-target="academedia">
                     tjena
                 </div>
-                <div id="newtonDiv">
+                <div class="myDiv" data-target="newton">
                     Kolla
                 </div>
-                <div id="ihmDiv">
+                <div class="myDiv" data-target="ihm">
                     här
                 </div>
             </div>
-            <?php the_content(); ?>
+            <!-- <?php the_content(); ?> -->
         </div>
     </div>
 </article>
