@@ -28,20 +28,47 @@ get_header()
                 <label for="radioIHM">IHM</label>
             </div>
             <div class="col-9">
+                <div class="myInfo">
+                    <h4>Vi har jobbat med flera kunder, här är några</h4>
+                    <p>
+                        0 Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ex sequi ab qui, ratione aut rerum eius nulla aspernatur
+                        repudiandae id officia perspiciatis eligendi commodi libero facere. Perspiciatis, eos earum.
+                    </p>
+                </div>
                 <div class="myDiv" data-target="volvo">
-                    hej
+                    <img class="img-fluid" src="https://www.volvogroup.com/se/about-us/what-we-do/our-brands/_jcr_content/root/responsivegrid/columncontrol/parsys1/teaser.coreimg.82.512.jpeg/1615455250180/1860x1050-volvo-iron.jpeg" alt="Volvo">
+                    <p>
+                        1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ex sequi ab qui, ratione aut rerum eius nulla aspernatur
+                        repudiandae id officia perspiciatis eligendi commodi libero facere. Perspiciatis, eos earum.
+                    </p>
                 </div>
                 <div class="myDiv" data-target="ericsson">
-                    hallå
+                    <img class="img-fluid" src="https://www.ser.se/explorer/images/logo-ericsson.png" alt="Ericsson">
+                    <p>
+                        2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ex sequi ab qui, ratione aut rerum eius nulla aspernatur
+                        repudiandae id officia perspiciatis eligendi commodi libero facere. Perspiciatis, eos earum.
+                    </p>
                 </div>
                 <div class="myDiv" data-target="academedia">
-                    tjena
+                    <img class="img-fluid" src="https://medarbetare.academedia.se/wp-content/uploads/2018/01/Logga_lila.jpg" alt="Academedia">
+                    <p>
+                        3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ex sequi ab qui, ratione aut rerum eius nulla aspernatur
+                        repudiandae id officia perspiciatis eligendi commodi libero facere. Perspiciatis, eos earum.
+                    </p>
                 </div>
                 <div class="myDiv" data-target="newton">
-                    Kolla
+                    <img class="img-fluid" src="https://www.fastighetsmassansyd.se/wp-content/uploads/sites/33/2020/02/Logo-orange-platta-1.png" alt="Newton">
+                    <p>
+                        4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ex sequi ab qui, ratione aut rerum eius nulla aspernatur
+                        repudiandae id officia perspiciatis eligendi commodi libero facere. Perspiciatis, eos earum.
+                    </p>
                 </div>
                 <div class="myDiv" data-target="ihm">
-                    här
+                    <img class="img-fluid" src="https://www.cellipbloggen.se/wp-content/uploads/2019/06/IHM.jpg" alt="IHM">
+                    <p>
+                        5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ex sequi ab qui, ratione aut rerum eius nulla aspernatur
+                        repudiandae id officia perspiciatis eligendi commodi libero facere. Perspiciatis, eos earum.
+                    </p>
                 </div>
             </div>
             <!-- <?php the_content(); ?> -->
